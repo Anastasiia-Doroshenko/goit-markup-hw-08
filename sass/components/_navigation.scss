@@ -3,7 +3,15 @@
     display: flex;
     align-items: center;
     margin-right: auto;
-    &__list {display: flex; align-items: center; list-style: none;}
+    &__list {
+        display: none;
+        
+        @media screen and (min-width:768px) {
+        display: flex;
+        align-items: center;
+        list-style: none;
+}
+}
 }
 
 .navigation__link {

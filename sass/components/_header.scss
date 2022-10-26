@@ -1,9 +1,15 @@
 .header {
     background-color: var(--main-white-color);
     border-bottom: 1px solid var(--border-header);
+    height: 60px;
+    @media screen and(min-width:768px) {
+        height: auto;
+    }
+
     & .container {
             display: flex;
             align-items: center;
+            height: 100%;
         }
 }
 

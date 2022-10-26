@@ -1,5 +1,16 @@
 .contact-information {
-    margin-right: 70px;
+    
+    text-align: center;
+    
+    @media screen and(min-width:768px) {
+            width: calc((100% - 120px) / 2);
+        }
+    
+        @media screen and(min-width:1200px) {
+            width: calc((100% - 120px) / 3);
+            text-align: start;
+        }
+  
 }
 
 .contact-information__logo {

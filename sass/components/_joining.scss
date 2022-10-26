@@ -1,3 +1,18 @@
+.joining {
+    text-align: center;
+@media screen and(min-width:768px) {
+        width: calc((100% - 120px) / 2);
+        margin-top: 65px;
+    }
+
+    @media screen and(min-width:1200px) {
+        width: calc((100% - 120px) / 3);
+        margin-right: 93px;
+        text-align: start;
+    }
+   
+}
+
 .joining__title {
     color: var(--main-white-color);
     font-weight: 700;
@@ -5,13 +20,15 @@
     line-height: 1, 14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 72px;
     margin-bottom: 20px;
+    margin-left: 13%;
+
 }
 
 
 .joining__list {
     display: flex;
+    justify-content: center;
 }
 
 .joining__item:not(:last-child) {
