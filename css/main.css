@@ -79,7 +79,7 @@
 .menu-container__item:not(:last-child) {
   padding-bottom: 32px;
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .menu-container__item {
     font-size: 40px;
   }
@@ -98,7 +98,7 @@
   margin-bottom: 70px;
   line-height: 1.17;
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .menu-contacts {
     margin-bottom: 64px;
     margin-top: 150px;
@@ -111,7 +111,7 @@
   font-size: 24px;
   margin-bottom: 12px;
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .menu-phone {
     font-size: 34px;
     margin-bottom: 32px;
@@ -123,13 +123,13 @@
   text-decoration: none;
   font-size: 20px;
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .menu-mail {
     font-size: 24px;
   }
 }
 
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .menu-social__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -147,7 +147,7 @@
 .menu-social__item:not(:last-child) {
   border-bottom: 1px solid rgba(33, 33, 33, 0.2);
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .menu-social__item {
     width: auto;
     padding-right: 10px;
@@ -423,11 +423,29 @@ img {
   padding-bottom: 118px;
   margin: 0 auto;
   text-align: center;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-foto.jpg);
-  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-foto.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-fotoM.jpg);
+  background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-fotoM.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-fotoM2x.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-fotoM2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-fotoT.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-fotoT.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-fotoT2x.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-fotoT2x.jpg);
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -435,6 +453,14 @@ img {
     min-height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-fotoD.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-fotoD.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero .hero {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/studio-bcg-fotoDx2.jpg);
+    background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/studio-bcg-fotoDx2.jpg);
   }
 }
 
@@ -682,7 +708,7 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-@media screen and (min-width: 468px) {
+@media screen and (min-width: 480px) {
   .team__item {
     width: 100%;
     height: auto;
@@ -707,6 +733,10 @@ img {
   .team__item .team__item:not(:last-child) {
     margin-right: 30px;
   }
+}
+
+.team__img {
+  width: 100%;
 }
 
 .socials {
